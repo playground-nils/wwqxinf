@@ -148,7 +148,7 @@
     "title": "模型副本详情",
     "modelUid": "模型 UID",
     "modelApi": "地址 API",
-    "chatCompletion": "<HOST>:<PORT>/v1/chat/completions",
+    "chatCompletion": "http://<HOST>:<PORT>/v1/chat/completions",
     "replicaId": "副本 ID",
     "workerAddress": "工作节点地址",
     "status": "状态",

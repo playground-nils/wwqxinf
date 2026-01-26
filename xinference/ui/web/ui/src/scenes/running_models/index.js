@@ -1162,14 +1162,17 @@ const RunningModels = () => {
         maxWidth="md"
         fullWidth
       >
+        {/*============*/}
         <DialogTitle>
           {t('modelReplicaDetails.title')}
           <Typography variant="caption" display="block" color="text.secondary">
             {t('modelReplicaDetails.modelUid')}: {selectedModelUid}
           </Typography>
-          <Typography variant="caption" display="block" color="text.secondary">
-            {t('modelReplicaDetails.modelApi')}: {t('modelReplicaDetails.chatCompletion')}
-          </Typography>
+          {tabValue === '/running_models/LLM' && (
+            <Typography variant="caption" display="block" color="text.secondary">
+              {t('modelReplicaDetails.modelApi')}: {t('modelReplicaDetails.chatCompletion')}
+            </Typography>
+          )}
         </DialogTitle>
         <DialogContent>
           <TableContainer component={Paper} variant="outlined">
